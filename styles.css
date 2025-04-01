@@ -1,0 +1,32 @@
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+#task-list{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 2px solid black;
+    height: auto;
+}
+
+.task-div{
+    padding: 1px;
+    padding-left: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    border: 2px solid blue;
+    width: 100%;
+    height: auto;
+}
+
+.delet{
+    justify-self: right;
+    background-color: red;
+    border-style: none;
+    border-radius: 5px;
+    height: auto;
+    color: white;
+}
