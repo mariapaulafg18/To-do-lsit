@@ -23,7 +23,6 @@ function render() {
 
         edit.classList.add('edit');
         edit.textContent = 'Edit';
-
         delit.classList.add('delet');
         newDiv.classList.add('task-div');
         delit.textContent = "x";
@@ -40,6 +39,7 @@ function render() {
             check.checked=true;
             taskText.style.textDecoration="line-through"
             taskText.style.color="gray";
+             newDiv.style.background='lightgray'
         }
 
         delit.addEventListener('click', () => {
@@ -57,6 +57,7 @@ function render() {
                 }
                 taskText.style.textDecoration = "line-through";
                 taskText.style.color = "gray"; 
+                newDiv.style.background='lightgray'
             } else {
                 const i= complete.indexOf(index);
                 if (i !== -1) {
@@ -64,6 +65,7 @@ function render() {
                 }
                 taskText.style.textDecoration = "none";
                 taskText.style.color = "black";
+                newDiv.style.background='white'
             }
 
         });

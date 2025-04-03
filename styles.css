@@ -1,32 +1,103 @@
-*{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-}
-
-#task-list{
-    padding: 5px;
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
     display: flex;
-    flex-direction: column;
-    gap: 5px;
-    border: 2px solid black;
-    height: auto;
-}
-
-.task-div{
-    padding: 1px;
-    padding-left: 10px;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    align-content: center;
-    border: 2px solid blue;
-    width: 100%;
-    height: auto;
+    height: 100vh;
 }
 
-.delet{
-    justify-self: right;
-    background-color: red;
-    border-style: none;
+main {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+}
+
+#add-task h1 {
+    font-size: 20px;
+    color: #333;
+}
+
+#input {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    height: auto;
+    outline: none;
+}
+
+#add {
+    padding: 8px 12px;
+    border: none;
+    background-color: #28a745;
     color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#add:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#add:hover:not(:disabled) {
+    background-color: #218838;
+}
+
+#task-list {
+    margin-top: 20px;
+}
+
+.task-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-text {
+    flex-grow: 1;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.checkbox {
+    cursor: pointer;
+}
+
+.edit,.delet {
+    border: none;
+    padding: 5px 8px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.edit {
+    background-color: #ffc107;
+    color: white;
+}
+
+.edit:hover {
+    background-color: #e0a800;
+}
+
+.delet {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delet:hover {
+    background-color: #c82333;
 }
